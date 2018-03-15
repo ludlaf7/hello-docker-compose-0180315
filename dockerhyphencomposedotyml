@@ -56,8 +56,8 @@ services:
             file: common.yaml
             service: db
 
-    # fourth container
     smtp:
+    # fourth container
         extends:
             file: common.yaml
             service: smtpfake
@@ -65,8 +65,8 @@ services:
         ports:
             - "127.0.0.1:8025:8025"
 
-    # fifth container
     wdb:
+    # fifth container
         image: yajo/wdb-server
         networks: *public
         ports:
